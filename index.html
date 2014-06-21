@@ -16,85 +16,80 @@
     <!-- Moved inline to avoid blocking critical rendering path. Might be a
     bad idea if any of this shared between other pages/clients. -->
     <style>
-    /* Move down content because we have a fixed navbar that is 50px tall */
-        body {
-          padding-top: 100px;
-          padding-bottom: 20px;
-        }
+      /* Move down content because we have a fixed navbar that is 50px tall */
+      body {
+        padding-top: 100px;
+        padding-bottom: 20px;
+      }
 
-        body.portfolio {
-          font-family: 'Open Sans', sans-serif;
-          -webkit-text-size-adjust: 100%;
-              -ms-text-size-adjust: 100%;
-        }
+      body.portfolio {
+        font-family: 'Open Sans', sans-serif;
+        -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+      }
 
-        strong.name {
-          color: #D15400;
-          font-size: 24px;
-        }
+      strong.name {
+        color: #D15400;
+        font-size: 24px;
+      }
 
-        position {
-          font-size: 18px;
-        }
+      position {
+        font-size: 18px;
+      }
 
-        .col-md-4:hover {
-          /*font-size: 24px;*/
-          /*background-color: black;*/
-        }
+      a:hover {
+        cursor: pointer;
+        cursor: hand;
+      };
 
-        a:hover {
-          cursor: pointer;
-          cursor: hand;
-        };
+      .navbar-inverse.portfolioNav {
+        height: 100px;
+      }
 
-        .navbar-inverse.portfolioNav {
-          height: 100px;
-        }
+      .navbar.portfolioNav {
+        height: 100px;
+      }
 
-        .navbar.portfolioNav {
-          height: 100px;
-        }
+      .navbar-inverse.portfolioNav {
+        background-color: #2f2f2f;
+      }
 
-        .navbar-inverse.portfolioNav {
-          background-color: #2f2f2f;
-        }
+      .proj-background {
+        background-color: #e0e0e0;
+        min-height: 300px;
+      }
 
-        .proj-background {
-          background-color: #e0e0e0;
-          min-height: 300px;
-        }
+      .proj-img-container {
+        height: 150px;
+        width: 250px;
+        margin: auto;
+        padding-top: 80px;
+        margin-bottom: 10px;
+      }
 
-        .proj-img-container {
-          height: 150px;
-          width: 250px;
-          margin: auto;
-          padding-top: 80px;
-          margin-bottom: 10px;
-        }
+      .navbar-btn.portfolio {
+        font-weight: 600;
+        background-color: #2f2f2f;
+        color: #D15400;
+        border-color: #D15400;
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+        margin-top: 20px;
+      }
 
-        .navbar-btn.portfolio {
-          font-weight: 600;
-          background-color: #2f2f2f;
-          color: #D15400;
-          border-color: #D15400;
-          width: 200px;
-          height: 60px;
-          font-size: 20px;
-          margin-top: 20px;
-        }
-
-        .btn-primary.portfolio {
-          font-weight: 600;
-          background-color: #2f2f2f;
-          color: #D15400;
-          border-color: #D15400;
-          width: 200px;
-          height: 60px;
-          font-size: 20px;
-          padding-top: 15px;
-          margin-left: auto;
-          margin-right: auto;
-        }
+      .btn-primary.portfolio {
+        font-weight: 600;
+        background-color: #2f2f2f;
+        color: #D15400;
+        border-color: #D15400;
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+        padding-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
       </style>
     <link href="dist/css/portfolio-4k.css" rel="stylesheet" media="(min-width: 3839px)">
     <link href="dist/css/print.css" rel="stylesheet" media="print">
